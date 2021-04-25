@@ -1,0 +1,1 @@
+# idea-plugin-open-explorer

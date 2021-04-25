@@ -6,6 +6,7 @@
 
   <description><![CDATA[
       this plugin is use `Alt+E` to open explorer or `Alt+Shift+E` to open class path on explorer;
+      idea 插件 自动在explorer中打开文件路径，或者打开编译后的文件路径
     ]]></description>
 
   <change-notes><![CDATA[
@@ -30,7 +31,8 @@
   <actions>
       <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
           <add-to-group group-id="MainMenu" anchor="last"  />
-          <action id="Myplugin.Textboxes" class="java.Action.OpenAction" text="Text _Boxes" description="A test menu item" />
+          <action id="Myplugin.Textboxes" class="io.github.muxiaobai.action.OpenAction" text="Text _Boxes"
+                  description="A test menu item" />
       </group>
   </actions>
 

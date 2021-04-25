@@ -1,4 +1,4 @@
-package java.Action;
+package io.github.muxiaobai.action;
 
 
 import com.intellij.openapi.actionSystem.AnAction;

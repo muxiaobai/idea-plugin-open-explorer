@@ -42,7 +42,7 @@ local.properties
 *.log
 *.gz
 *.bat
-
+/out/
 ######################
 # Visual Studio Code
 ######################

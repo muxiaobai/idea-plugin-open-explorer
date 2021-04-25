@@ -1,5 +1,5 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
+  <id>io.github.muxiaobai</id>
   <name>open-explorer</name>
   <version>1.0</version>
   <vendor email="zpf12345678910@gmail.com" url="https://www.muxiaobai.github.io">muxiaobai</vendor>
@@ -34,6 +34,12 @@
           <action id="Myplugin.Textboxes" class="io.github.muxiaobai.action.OpenAction" text="Text _Boxes"
                   description="A test menu item" />
       </group>
+      <group id="Halo Tools" text="Halo Tool" popup="true">
+          <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+        <!-- 创建按钮 -->
+        <action class="io.github.muxiaobai.action.ProjectPopAction" id="halo.basic.class" description="Halo Basic" text="Basic Class"/>
+      </group>
   </actions>
+
 
 </idea-plugin>

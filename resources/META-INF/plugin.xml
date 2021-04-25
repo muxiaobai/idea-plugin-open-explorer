@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>open-explorer</name>
+  <version>1.0</version>
+  <vendor email="zpf12345678910@gmail.com" url="https://www.muxiaobai.github.io">muxiaobai</vendor>
+
+  <description><![CDATA[
+      this plugin is use `Alt+E` to open explorer or `Alt+Shift+E` to open class path on explorer;
+    ]]></description>
+
+  <change-notes><![CDATA[
+      this plugin is use `Alt+E` to open explorer or `Alt+Shift+E` to open class path on explorer;
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+    <!-- Add your actions here -->
+  <actions>
+      <group id="MyPlugin.SampleMenu" text="_Sample Menu" description="Sample menu">
+          <add-to-group group-id="MainMenu" anchor="last"  />
+          <action id="Myplugin.Textboxes" class="java.Action.OpenAction" text="Text _Boxes" description="A test menu item" />
+      </group>
+  </actions>
+
+</idea-plugin>
